@@ -7,7 +7,6 @@ while true; do
     echo "====================================="
     echo ""
     
-    # Проверка статуса
     if docker ps 2>/dev/null | grep -q "paperplane"; then
         echo "Status: 🟢 Running"
     else

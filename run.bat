@@ -9,7 +9,6 @@ echo         ThePaperPlane Project Manager
 echo ===============================================
 echo.
 
-REM Проверка статуса
 docker ps --format "table {{.Names}}\t{{.Status}}" 2>nul | findstr "paperplane" >nul
 if %errorlevel%==0 (
     echo Status: 🟢 Running
