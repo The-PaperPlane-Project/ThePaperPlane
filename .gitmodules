@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/The-PaperPlane-Project/frontend.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/The-PaperPlane-Project/backend.git
