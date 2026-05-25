@@ -12,6 +12,15 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - DATABASE_URL=sqlite:///./airplane.db
+      - MAIL_SMTP_HOST=smtp.yandex.ru
+      - MAIL_SMTP_PORT=465
+      - MAIL_SMTP_USERNAME=ethernet11.11@yandex.ru
+      - MAIL_SMTP_PASSWORD=uiphoizedpycpqgm
+      - MAIL_FROM_EMAIL=ethernet11.11@yandex.ru
+      - MAIL_FROM_NAME=Paper Plane
+      - MAIL_SMTP_STARTTLS=false
+      - MAIL_SMTP_USE_SSL=true
+      - MAIL_RAISE_ON_ERROR=true
     restart: unless-stopped
 
   frontend:
